@@ -1,5 +1,5 @@
 /* ----------------------------- 공통 영역 */
-body {width:100%;}
+header, main, footer {width:100%;}
 main .section {}
 main .section .title {
     color:#111;
@@ -16,35 +16,12 @@ main .section .title a {
     justify-content: center; margin-bottom:100px;
 }
 main .section .title a img {margin-left: 10px;}
-/* ----------------------------- 헤더 영역 */
-#gnb_area {
-    padding:0 60px; height:70px;
-    display:flex; flex-flow:row nowrap;
-    justify-content:space-between; align-items:center;
-    position:fixed; top:0; left:0; z-index:999;
-    width:100vw;
-}
-#gnb_area #logo {}
-#gnb_area #logo a {}
-#gnb_area #logo a img {width:153px;}
-#gnb_area .gnb_g {
-    display:flex; flex-flow:row wrap;
-    align-items:center;
-}
-#gnb_area .gnb_g li {}
-#gnb_area .gnb_g li a {
-    margin-right:33px; font-size:1.125rem; font-weight: 700;
-    color: #111;
-}
-#gnb_area .gnb_g li:last-child a {margin-right:0;}
-#gnb_area .menu_g {}
-#gnb_area .menu_g a {}
-#gnb_area .menu_g .search {}
-#gnb_area .menu_g a img {width:44px;}
+/* ----------------------------- 헤더 영역 별도 적용 */
+
 /* ----------------------------- main 영역 */
 main {width:100%;}
 main .main_banner {
-    background:url(../images/banner_1.jpg)no-repeat center;
+    background:url(../images/banner_1.jpg) center no-repeat;
     background-size:cover; height:100vh; position: relative;
     padding: 0 60px; width: 100vw;
 }
@@ -204,72 +181,4 @@ main .section8 .cont_area .arrow_btn {
 main .section8 .cont_area .arrow_btn a:first-child {margin-left: 60px;}
 main .section8 .cont_area .arrow_btn a:last-child {margin-right:60px;}
 main .section8 .cont_area .arrow_btn a img {}
-footer {
-    display:flex; flex-flow: column nowrap;
-    color:#333; padding:50px 154px 70px; 
-    background-color:#F6F6F6;
-}
-footer .ft_top {
-    display:flex; flex-flow:row wrap;
-    justify-content:space-between; align-items:center;
-}
-footer .ft_top .notice {display:flex; flex-flow:row wrap;
-    justify-content:space-between;}
-footer .ft_top .notice p {margin-right:10px; font-weight: 700;}
-footer .ft_top .notice a {}
-footer a {}
-footer a img {}
-footer .other_site {}
-footer .other_site a {
-    border-bottom:1px solid #111;
-    padding:0 10px; display: inline-block; line-height: 46px;
-}
-footer .other_site a:first-child {margin-right:40px;}
-footer .other_site a em {margin-right: 40px;}
-footer .other_site a em img {}
-footer .ft_mid {
-    display: flex; flex-flow:row nowrap;
-    justify-content: space-between;
-    margin-top:81px;
-}
-footer .ft_mid .fnb {display: flex; flex-flow:row nowrap;}
-footer .ft_mid .fnb li {margin-right: 26px; display: flex; flex-flow:row nowrap;}
-footer .ft_mid .fnb li::after {
-    content:'';
-    display: inline-block; width:1px; height:18px;
-    background-color:#aaa;
-    margin-left:16px;
-}
-footer .ft_mid .fnb li:last-of-type:after {display:none;}
-footer .ft_mid .fnb li a {}
-footer .ft_mid .fnb li a:nth-of-type(4) {}
-footer .ft_mid .contact {}
-footer .ft_mid .contact .contact_top {display: flex; flex-flow:row nowrap; margin-bottom: 10px;}
-footer .ft_mid .contact .grid_c:first-of-type {margin-right: 49px;}
-footer .ft_mid .contact .grid_c {
-    display:grid;}
-footer .ft_mid .contact .grid_c h3 {}
-footer .ft_mid .contact .grid_c h3 img {}
-footer .ft_mid .contact .grid_c p {}
-footer .ft_mid .contact .grid_c p a {font-weight: 700; color:#333;}
-footer .ft_mid .contact .grid_c p em {font-weight: 700;}
-footer .ft_mid .contact .time {}
-footer .ft_mid .contact .time h3 {}
-footer .ft_mid .contact .time h3 img {}
-footer .ft_mid .contact .time p {}
-footer .ft_mid .contact .time p em {}
-footer .ft_mid .contact .time p em {}
-footer .ft_info {display: flex; flex-flow:row nowrap;}
-footer .ft_info #ft_logo {margin-right: 41px;}
-footer .ft_info #ft_logo a {}
-footer .ft_info #ft_logo a img {}
-footer .ft_info ul {}
-footer .ft_info ul li {
-    margin-bottom:12px; font-size: 0.75rem; letter-spacing:-.2px;
-}
-footer .ft_info ul li:last-child {margin-bottom:0;}
-footer .ft_info ul li address {}
-footer #copyright {
-    margin-top:51px; color:#171C8F;
-    font-size:0.875rem; font-weight:700;
-}
+/* footer 공통 적용 별도 작성 */
